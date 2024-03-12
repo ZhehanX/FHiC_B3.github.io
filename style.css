@@ -1,0 +1,211 @@
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+}
+
+/* Estilos para el título */
+#header {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Estilos para los elementos aside dentro de #titulo */
+  #header > aside {
+    flex: 0 0 25vw; /* Establece el ancho deseado */
+    background: rgb(164, 203, 245);
+    height: 5em;
+    display: flex; /* Alinea los elementos secundarios horizontalmente */
+   /* justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-size: 20px;
+  }
+  
+  /* Estilos para la imagen dentro de #titulo */
+  #header img {
+    max-width: 90%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 90%; /* Ajusta la altura máxima de la imagen */
+    margin: 1em;
+  }
+  
+  /* Estilos para el contenedor principal */
+  #mainView {
+    display: flex;  
+    width: 100%;
+  }
+  
+
+  #mainView > article{ flex: 0 0 62vw;}
+  #mainView > aside {
+    flex: 0 0 18vw;
+    /* Agrega un borde delgado alrededor de los elementos */
+    border: 1px solid rgb(124, 176, 180);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  #mainView>article{
+    /* Agrega un borde delgado alrededor de los elementos */
+    border: 1px solid rgb(124, 166, 180);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .titleWeb{
+      text-align: center;
+  }
+  /* Estilos para el contenido dentro de #mainView */
+  #mainView > nav{    
+    flex: 0 0 10vw;
+    /* Agrega un borde delgado alrededor de los elementos */
+    border: 1px solid rgb(124, 166, 180);
+    padding: 30px;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Alinea los elementos a la izquierda */
+    align-items: center;
+  }
+.rounded-image {
+    border-radius: 50%; /* Esto hace que la imagen tenga bordes redondeados */
+    width: 60px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 60px; /* Ajusta la altura de la imagen según sea necesario */
+}
+
+.Welcome{
+  padding: 60px;
+}
+.ApartadoTitle{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerTypes{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+  background: rgb(164, 203, 245);
+  height: 5vh;
+  padding: 20px;
+}
+
+.InformationImage{
+  width:60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+/*VENTANA Miembros: -------------------*/
+/* Estilos adicionales */
+.memberContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.memberCard {
+  width: calc(25% - 20px); /* Calcula el ancho de cada tarjeta para ocupar el 25% de la pantalla */
+  margin: 10px;
+  padding: 60px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.memberImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+/*Principios de Formulario*/
+/* style.css */
+
+/* 1. Selección de fuentes adecuadas */
+body, input, textarea, button {
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Tamaño de caja consistente */
+input[type="text"],
+input[type="email"],
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* 3. Alineación y espaciado uniforme */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 4. Estilo de estado de enfoque */
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #007bff; /* Cambia el color del borde al enfocar */
+}
+
+/* 5. Consistencia de color y contraste */
+body {
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+label {
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* 6. Diseño receptivo */
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* 7. Alineación de etiquetas y campos de entrada */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+/* 8. Accesibilidad */
+input[type="text"],
+input[type="email"],
+textarea,
+button {
+  font-size: 16px; /* Asegura que el texto sea legible */
+}
+
+label {
+  cursor: pointer; /* Hace que las etiquetas sean clicables */
+}
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.principles ul {
+  flex: 1;
+  width: auto;
+  padding: 10;
+}
