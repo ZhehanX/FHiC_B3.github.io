@@ -32,8 +32,6 @@ ul {
     width: 100%;
   }
   
-
-  #mainView > article{ flex: 0 0 62vw;}
   #mainView > aside {
     flex: 0 0 18vw;
     /* Agrega un borde delgado alrededor de los elementos */
@@ -45,6 +43,7 @@ ul {
 
 
   #mainView>article{
+    flex: 0 0 62vw;
     /* Agrega un borde delgado alrededor de los elementos */
     border: 1px solid rgb(124, 166, 180);
     padding: 10px;
