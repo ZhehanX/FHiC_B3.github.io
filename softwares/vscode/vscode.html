@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog World</title>
+    <script src="https://kit.fontawesome.com/e5991aea00.js" crossorigin="anonymous"></script>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style_navigation.css">
+    <link rel="stylesheet" href="style_softwares.css">
+    <script src="menu.js"></script>
+          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+</head>  
+<body>    
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        VANTA.NET({
+            el: "#back",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0087EE, // Array de colores: verde y celeste
+            backgroundColor: 0x004166, // Color de fondo azul oscuro
+            points: 17.00,
+            maxDistance: 27.00,
+            spacing: 16.00,
+            showDots: false
+        })
+    }
+    );
+    </script>
+        
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" alt="logoImage">
+                <img src="../../img/logoW.png" alt="logo Image" height="60">
+            </a>
+            <!-- El boton debe colapsar el MENU que tenemos abajo como "mymenu" en su target-->
+            <button class="navbar-toggler ml-auto custom-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu" >
+                <span class="navbar-toggler-icon" tabindex="0">
+                    <i class="fas fa-bars" style="color:rgba(64, 185, 165, 0.9); font-size:28px;"></i>
+                </span>
+            </button>
+
+            <!-- Menú con la lista de enlaces a los que podemos movernos-->
+            <div class="collapse navbar-collapse justify-content-end" id="mymenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link menu-link" href="../../index.html">Home</a> </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button" data-bs-toggle="dropdown" >Instalar Software</a>
+                            <ul class="dropdown-menu custom-drop">
+                                <li><a class="dropdown-item" href="softwares/vscode/vscode.html" style="--i:1;"><span></span> VSCode</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:2;"><span></span> Compilador</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:3;"><span></span> Debugador</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:4;"><span></span> IntelliJ IDEA</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:5;"><span></span> Anaconda</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:6;"><span></span> Arduino</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button" data-bs-toggle="dropdown">Recursos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" style="--i:1;"><span></span>ChatGpt</a></li>
+                                <li><a class="dropdown-item" href="../../recursos/StackOverflow/Introduccion.html" style="--i:2;"><span></span>StackOverflow</a></li>
+                                <li><a class="dropdown-item" href="../../recursos/GitHub/github.html" style="--i:3;"><span></span>GitHub</a></li>
+
+                            </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="road_maps.html">Road Maps</a> </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="salidas_laborales.html">Salidas Laborales</a> </li>
+
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="main content" id="back">
+
+        <div class="main container">
+            <h2 class="title">Instalación de Software</h2>
+    
+            <div class="box-container">
+    
+                <div class="boxheader" href="compilador.html" tabindex="0" >
+                    <label>
+                        <i class="fa-solid fa-code"></i>
+                    </label>
+                    <h3 class="title-software">Compilador</h3>
+                </div>
+    
+                <div class="boxheader" href="debugador.html" tabindex="0">
+                    <label>
+                        <i class="fa-solid fa-bug"></i>
+                    </label>
+                    <h3 class="title-software">Debugador</h3>
+                </div>
+
+                <div class="boxheader" data-target="IDES" href="vscode.html" tabindex="0">
+                    <label>
+                        <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                    </label>
+                    <h3 class="title-software">IDES</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="software content">
+        <div class="software_container">
+            <div class="sofware_list">
+                <div class="dropdown_list active" ><p class="title_softwares" tabindex="0">Softwares</p>
+                    <div class="arrow">
+                        <span class="left-icon"></span>
+                        <span class="right-icon"></span>
+                        <div class="items">
+                            <a href="#" style="--i:1;"><span></span>
+                                <img src="../../img/vscode.png" height="50" width="50" alt="VSCode Icon"/>
+                                <p>VScode</p>
+                            </a>
+                            <a href="#" style="--i:2;"><span></span>
+                                <img src="../../img/intellij.png" height="50" width="50" alt="IntelliJ Icon"/>
+                                <p>IntelliJ</p>
+                            </a>
+                            <a href="#" style="--i:3;"><span></span>
+                                <img src="../../img/anaconda.png" height="50" width="50" alt="Anaconda Icon"/>
+                                <p>Anaconda</p>
+                            </a>
+                            <a href="#" style="--i:4;"><span></span>
+                                <img src="../../img/modelsim.png" height="50" width="50" alt="ModelSim Icon"/>
+                                <p>ModelSim</p>
+                            </a>
+                            <a href="#" style="--i:5;"><span></span>
+                                <img src="../../img/arduino.png" height="50" width="50" alt="Arduino Icon"/>
+                                <p>Arduino</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="SO_content">
+
+                <h1>Visual Studio Code</h1>
+                <p class="content-specification">Selecciona un sistema operativo para ver especificaciones.</p>
+
+                    <div class="container-fluid"><!--Para que boostrap tenga en cuenta el tamaño de Types-->
+                    <div class="Types">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4"> 
+                                <div class="SO_boxheader active" data-target="Windows" tabindex="0" 
+                                            onclick="updateSpecification(this)" onkeydown="handleKeyPress(event)">
+                                    <label class="icon">
+                                        <i class="fa-brands fa-windows"></i>
+                                    </label>
+                                    <h3 class="title-SO">Windows</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-4"> 
+                                <div class="SO_boxheader" data-target="Linux" href="#" tabindex="0" 
+                                            onclick="updateSpecification(this)" onkeydown="handleKeyPress(event)">
+                                    <label  class="icon">
+                                        <i class="fa-brands fa-linux"></i>
+                                    </label>
+                                    <h3 class="title-S0">Linux</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-4"> 
+                                <div class="SO_boxheader" data-target="Mac" href="#" tabindex="0" 
+                                            onclick="updateSpecification(this)" onkeydown="handleKeyPress(event)">
+                                    <label  class="icon">
+                                        <i class="fa-brands fa-apple"></i>
+                                    </label>
+                                    <h3 class="title-SO">Mac</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="SO_specification">
+                        <h3>Especificaciones</h3>
+                    </div>
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Tutoriales para Windows -->
+                        <div class="mySlides fade" data-os='Windows'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">1 / 3</div>
+                                <img class="img_tutorial" src="../../img/tutorial_descarga_vscode.png">
+                                <div class="text">
+                                    <h2>Instalación de Visual Studio Code</h2>
+                                    <p>Guía paso a paso para descargar e instalar Visual
+                                        Studio Code en tu sistema Windows. Para comenzar, puedes
+                                        buscar la página de 
+                                        <a href="https://code.visualstudio.com/Download" alt="enlace VSCode" text-decoretion="none">Download</a> o 
+                                        descargar directamente el VSCode predeterminado con 
+                                        <a class="download-link" href="#" target="_blank">nuestro enlace</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade" data-os='Windows'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">2 / 3</div>
+                                <img class="img_tutorial"  src="../../img/interfaz_vscode.png">
+                                <div class="text">
+
+                                    <h2>Interfaz de Usuario</h2>
+                                    <p>En esta sección, exploraremos los elementos básicos de la interfaz de 
+                                        usuario de Visual Studio Code</p>
+                                    <div class="tuto2Windows">
+                                        <h4>Menús:</h4>
+                                        <p style="text-align: left;">Proporcionan acceso a diferentes opciones y
+                                            funciones, como editar, buscar, depurar, entre otros.</p>
+                                    
+                                        <h4>Panel:</h4>
+                                        <p style="text-align: left;">Se encuentra en la parte inferior de la ventana
+                                            y contiene secciones como Actividades, Problemas, Salida y Terminal.</p>
+                                    
+                                        <h4>Terminal:</h4>
+                                        <p style="text-align: left;">Permite ejecutar comandos directamente desde el
+                                            editor. Se puede abrir desde el menú superior.</p>
+                                    
+                                        <h4>Editor:</h4>
+                                        <p style="text-align: left;">Es el área principal de trabajo donde escribes y
+                                            editas tu código. Cuenta con funciones como resaltado de sintaxis, autocompletado 
+                                            y navegación.</p>
+                                        <h4>Minimapa</h4>
+                                        <p style="text-align: left;">Muestra una vista previa del código completo en una barra lateral.</p>
+                                        <h4>Barra de estado:</h4>
+                                        <p style="text-align: left;">Muestra información sobre el archivo actual, como el lenguaje de programación, 
+                                            la codificación y la posición del cursor. Si tienes extensiones como Github Copilot, 
+                                            verás los iconos a la derecha aquí.</p>
+                                    </div>
+                                </body>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade" data-os='Windows'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">3 / 3</div>
+                                <div class="row tuto2ImgW">
+                                    <div class="col-lg-6">
+                                        <img class="img_tutorial" src="../../img/extencion_busqueda.png">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img class="img_tutorial" src="../../img/extensiones_vscode.png">
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <h2>Gestión de extensiones</h2>
+                                    <p>En esta sección aprenderás cómo buscar, instalar y gestionar extensiones 
+                                        en Visual Studio Code. </p>
+                                    <p>Las extensiones son herramientas adicionales que 
+                                        puedes añadir para personalizar y mejorar tu experiencia de desarrollo. 
+                                        Desde temas hasta herramientas de depuración avanzadas, las extensiones 
+                                        pueden adaptar Visual Studio Code para que se ajuste a tus necesidades específicas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tutoriales para Linux -->
+                        <div class="mySlides fade" data-os='Linux'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">1 / 3</div>
+                                <img class="img_tutorial"  src="../../img/tutorial_descarga_vscode.png">
+                                <div class="text">
+                                    <h2>Instalación de Visual Studio Code</h2>
+                                    <p>Guía paso a paso para descargar e instalar Visual
+                                        Studio Code en tu sistema Linux. Para comenzar, puedes
+                                        buscar la página de 
+                                        <a href="https://code.visualstudio.com/Download" alt="enlace VSCode" text-decoretion="none">Download</a> o 
+                                        descargar directamente el VSCode predeterminado con 
+                                        <a class="download-link" href="#" target="_blank">nuestro enlace</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade" data-os='Linux'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">2 / 3</div>
+                                <img class="img_tutorial"  src="../../img/xin.png">
+                                <div class="text">
+                                    <h2>Trabajando en la sección...</h2>
+                                    <p>El equipo aún no ha trabajado sobre esta sección, puedes ver la instalación de windows.</p>
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="mySlides fade" data-os='Linux'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">3 / 3</div>
+                                <img class="img_tutorial" src="../../img/han.png">
+                                <div class="text">
+                                    <h2>Trabajando en la sección...</h2>
+                                    <p>El equipo aún no ha trabajado sobre esta sección, puedes ver la instalación de windows.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Tutoriales para Mac -->
+                        <div class="mySlides fade" data-os='Mac'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">1 / 3</div>
+                                <img class="img_tutorial"  src="../../img/tutorial_descarga_vscode.png">
+                                <div class="text">
+                                    <h2>Instalación de Visual Studio Code</h2>
+                                    <p>Guía paso a paso para descargar e instalar Visual
+                                        Studio Code en tu sistema Mac. Para comenzar, puedes
+                                        buscar la página de 
+                                        <a href="https://code.visualstudio.com/Download" alt="enlace VSCode" text-decoretion="none">Download</a> o 
+                                        descargar directamente el VSCode predeterminado con 
+                                        <a class="download-link" href="#" target="_blank">nuestro enlace</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade" data-os='Mac'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">2 / 3</div>
+                                <img class="img_tutorial" src="../../img/xin.png">
+                                <div class="text">
+                                    <h2>Trabajando en el tutorial...</h2>
+                                    <p>El equipo aún no ha trabajado sobre esta sección, puedes ver la instalación de windows.</p>
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="mySlides fade" data-os='Mac'>
+                            <div class="container-fluid paso">
+                                <div class="numbertext">3 / 3</div>
+                                <img class="img_tutorial" src="../../img/xin.png">
+                                <div class="text">
+                                    <h2>Trabajando en ello...</h2>
+                                    <p>El equipo aún no ha trabajado sobre esta sección, puedes ver la instalación de windows.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)" onkeydown="plusSlidesKey(-1, event)" tabindex="0">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" onkeydown="plusSlidesKey(1, event)" tabindex="0">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    
+               </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+          <div class="mt-3">
+            <h5>Información</h5>
+            <p><a href="#" class="text-white" style="text-decoration: none;" tabindex="0">Sobre nosotros</a></p>
+          </div>
+          <span class="text-muted">© 2024 ProgWorld. Todos los derechos reservados.</span>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="softwares.js"></script>
+    <script src="softwares_listeners.js"></script>
+    </body>
+   
+</html>

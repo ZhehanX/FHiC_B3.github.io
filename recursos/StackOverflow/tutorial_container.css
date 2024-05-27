@@ -1,0 +1,66 @@
+
+
+.tutorial_container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #00000033;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .tutorial_container img{
+    position: relative;
+    width: auto;
+    height: 80%;
+  
+  }
+  .tutorial_container p{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    color: #212529;
+  }
+  
+  
+  .tutorial_container .btn_prev{
+    font-size: 0; /* texto para lector de pantalla */
+    position: absolute;
+    top: 50%;
+    left:0%;
+    width: 20px; 
+    height: 50px; 
+    border: none; 
+    cursor: pointer; 
+    color: #212529;
+    background-color: #00000033;
+    background-image: url('./img/left_arrow.png'); 
+    background-size: 20px 50px; 
+    background-repeat: no-repeat;
+    
+  }
+  
+  .tutorial_container .btn_next{
+    font-size: 0; /* texto para lector de pantalla */
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 20px; 
+    height: 50px; 
+    border: none; 
+    cursor: pointer; 
+    color: #212529;
+    background-color: #00000033;
+    background-image: url('./img/right_arrow.png'); 
+    background-size: 20px 50px; 
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  .btn_next:hover, .btn_prev:hover {
+    background: rgb(67, 176, 110);
+  
+  } 

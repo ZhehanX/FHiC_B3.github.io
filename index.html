@@ -1,68 +1,217 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <title>Prácticas de FHiC - [Nombre del proyecto web]</title>
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog World</title>
+    <script src="https://kit.fontawesome.com/e5991aea00.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style_navigation.css">-->
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="style_navigation.css">
+    <script> src="menu.js" </script>
 </head>
 <body>
-  <header>
-    <div id="header">
-      <aside><img src="img/logoFHiC.png" alt="Logo de FHiC"></aside>
-      <aside class="headerTypes"> <a  href="miembros.html">Miembros</a></aside>
-      <aside class="headerTypes">Proyecto Web</aside>
-      <aside class="headerTypes"><a  href="contacto.html">Contactos</a></aside>       
-    </div>
-  </header>
+    <!-- CSS de Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <h2 class="titleWeb">Web del Grup B3</h2>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" alt="logoImage">
+                <img src="img/logoW.png" alt="logo Image" height="60">
+            </a>
+            <!-- El boton debe colapsar el MENU que tenemos abajo como "mymenu" en su target-->
+            <button class="navbar-toggler ml-auto custom-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu" >
+                <span class="navbar-toggler-icon" tabindex="0">
+                    <i class="fas fa-bars" style="color:rgba(64, 185, 165, 0.9); font-size:28px;"></i>
+                </span>
+            </button>
 
-  <div id="mainView">
-   
-    <aside>
-      <ul> 
-        <h3 class="ApartadoTitle"><a  href="miembros.html">Miembros</a></h3>
-        <li class="names">Zixin Zhang</li>
-        <img src="img/xin.png" alt="Zixin Zhang" class="rounded-image">
-        <li class="names">Zhehan Xiang</li>
-        <img src="img/han.png" alt="Zhehan" class="rounded-image">
-        <li class="names">Jiakai Chen</li>
-        <img src="img/chen.png" alt="Chen" class="rounded-image">
-        <li class="names">William Sotto</li>
-        <img src="img/william.png" alt="Will" class="rounded-image">
-      </ul>
-    </aside>
-  
-  
-    <article>
-      <h3 class="ApartadoTitle">Información del Proyecto</h3>
-      <p class="Welcome">¡Bienvenidos a la página web del grupo B3! Aquí encontrarás todo lo que necesitas para introducirte en el apasionante mundo de la programación. Desde los fundamentos de los lenguajes de programación hasta el uso avanzado de plataformas como GitHub y otras herramientas esenciales en el desarrollo de software. 
-        Explora nuestra web para descubrir recursos, tutoriales y consejos que te ayudarán a dar tus primeros pasos en este emocionante campo. ¡No te pierdas la oportunidad de aprender y crecer con nosotros!.</p>
-      <img src="img/prog.jpg" alt="Will" class="InformationImage">
-    </article>
+            <!-- Menú con la lista de enlaces a los que podemos movernos-->
+            <div class="collapse navbar-collapse justify-content-end" id="mymenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link menu-link" href="index.html">Home</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button" data-bs-toggle="dropdown" >Instalar Software</a>
+                            <ul class="dropdown-menu custom-drop">
+                                <li><a class="dropdown-item" href="softwares/vscode/vscode.html" style="--i:1;"><span></span> VSCode</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:2;"><span></span> Compilador</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:3;"><span></span> Debugador</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:4;"><span></span> IntelliJ IDEA</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:5;"><span></span> Anaconda</a></li>
+                                <li><a class="dropdown-item" href="#" style="--i:6;"><span></span> Arduino</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-link" href="#recursos" role="button" data-bs-toggle="dropdown">Recursos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" style="--i:1;"><span></span>ChatGpt</a></li>
+                                <li><a class="dropdown-item" href="recursos/StackOverflow/Introduccion.html" style="--i:2;"><span></span>StackOverflow</a></li>
+                                <li><a class="dropdown-item" href="recursos/GitHub/github.html" style="--i:3;"><span></span>GitHub</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="road_maps.html">Road Maps</a> </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="salidas_laborales.html">Salidas Laborales</a> </li>
+
+                </ul>    
+            </div>
+        </div>
+    </nav>
 
 
-    <aside>
-      <section>
-        <h3 class="ApartadoTitle" >Contacto</h3>
-        <p>Si tienes alguna opinión o sugerencia sobre nuestro proyecto web, contáctanos <a href="contacto.html">aquí</a>.</p>
-        <p>El archivo contacto.html contiene un enlace a principiosD.html donde se explican los principios de diseño que se han aplicado en el diseño del formulario.</p>
-      </section>
-    </aside>
-      
-  </div>
-  
-  <footer>
-    <p>Copyright &copy; FHiC 23-24 - [Nombre del proyecto web]</p>
-  </footer>
-  
+    <main class="main content" id="recursos">
+        <div class="main-container">
+            <h2 class="title">Adéntrate al mundo de la programación</h2>
+            <p class="descriptionMain">Proporcionamos consejos y páginas que te ayudarán a mejorar tus habilidades de programación.</p>
+            
+            <div class="container">
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a class="boxheader" href="recursos/StackOverflow/Introduccion.html" tabindex="0" >
+                            <img src="img/stackover.png" alt="StackOverFlow Icon">
+                            <h3 class="title-recursos">Stack Overflow</h3>
+                            <p class="des-recursos">La comunidad de desarrolladores más grande del mundo, donde puedes hacer preguntas y encontrar respuestas sobre cualquier tema de programación.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="boxheader" href="recursos/chagpte.html" tabindex="0">
+                            <img src="img/gpt.jpg" alt="ChatGPT Icon">
+                            <h3 class="title-recursos">Chat GPT</h3>
+                            <p class="des-recursos">Un espacio para conversar con ChatGPT, una inteligencia artificial diseñada para ayudarte con tus consultas y problemas de programación.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <section class="github content">
+        <div class="container-left">
+            <div class="beforecontent" tabindex="0" >
+                <div class ="row">
+                    <div class="col-md-2">
+                        <img class="githublogo" src="img/githublogo.png" alt="GitHub Logo Image">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="githubBox" >
+                            <h3 class="gitHubTitle">Git Hub</h3>
+                            <p class="githubInfo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Dolores dicta perferendis
+                            error optio voluptatem cum? Earum, perferendis nihil?.</p>
+                            <a class="githubLink" href="recursos/GitHub/github.html">Explorar más de GitHub</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="software content">
+        <div class="software_container">
+            <div class="col">
+                <div class="div_container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="title_software">
+                                <h1 class="title-software1">Instalar </h1>
+                                <h1 class="title-software2">Software</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <a class="boxsoftware" href="recursos/compilador.html" tabindex="0">
+                                <img src="img/compiler.png" alt="Compilador Icon">
+                                <h3 class="softwares">Compilador</h3>
+                                <p>Herramienta que traduce código fuente a lenguaje de máquina, necesario para ejecutar programas.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4">
+                            <a class="boxsoftware" href="recursos/debugador.html" tabindex="0">
+                                <img src="img/debugger.png" alt="Debugger Icon">
+                                <h3 class="softwares">Depurador</h3>
+                                <p>Herramienta que te permite observar el comportamiento de un programa mientras se 
+                                    está ejecutando, detenerlo e inspeccionarlos.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_container">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <a class="boxsoftware" href="softwares/vscode/vscode.html" tabindex="0">
+                                <img src="img/vscode.png" alt="Vscode Logo">
+                                <h3 class="softwares">Visual Studio Code</h3>
+                                <p>Editor de código con amplias funciones,
+                                     extensiones y soporte para múltiples lenguajes de programación.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4">
+                            <a class="boxsoftware" href="recursos/intellij.html" tabindex="0">
+                                <img src="img/intellij.png" alt="IntelliJ Logo">
+                                <h3 class="softwares">IntelliJ IDEA</h3>
+                                <p>Es un entorno de desarrollo integrado altamente eficiente y adaptable, 
+                                    ideal para proyectos de software complejos.</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4">
+                            <a class="boxsoftware" href="recursos/anaconda.html" tabindex="0">
+                                <img class="anaLogo" src="img/anaconda.png" alt="Anaconda Logo">
+                                <h3 class="softwares">Anaconda</h3>
+                                <p>Plataforma completa para análisis de datos en Python y R, 
+                                    que incluye bibliotecas, entorno de desarrollo y gestión de paquetes.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="recursos content">
+        <div class="div_recursos">
+        <h2 class="conceptos"> Conceptos útiles, bibliotecas y lenguajes para aprender programación</h2>
+        </div>
+        <div class="recursos_container">
+            <div class="div_recursos">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="sub" tabindex="0" href="home.html">
+                            <div class="title_sub1">
+                                <h3>Diccionario de conceptos</h3>
+                            </div>              
+                            <div class="content_sub1">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aspernatur! Ut laboriosam nemo amet tenetur cumque atque quasi facere tempore sapiente ea! Fugit exercitationem quae nobis, aliquid dolorem neque sit?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="sub" tabindex="0" href="home.html">
+                            <div class="title_sub2">
+                                <h3>Bibliotecas útiles</h3>
+                            </div>              
+                            <div class="content_sub2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aspernatur! Ut laboriosam nemo amet tenetur cumque atque quasi facere tempore sapiente ea! Fugit exercitationem quae nobis, aliquid dolorem neque sit?</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+          <div class="mt-3">
+            <h5>Información</h5>
+            <p><a href="#" class="text-white" style="text-decoration: none;" tabindex="0">Sobre nosotros</a></p>
+          </div>
+          <span class="text-muted">© 2024 ProgWorld. Todos los derechos reservados.</span>
+        </div>
+      </footer>
+<!--script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </html>

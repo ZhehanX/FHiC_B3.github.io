@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog World</title>
+    <!-- Bootstrap-->
+
+
+    <script src="https://kit.fontawesome.com/e5991aea00.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../style_navigation.css">
+    <link rel="stylesheet" href="style_GitHub.css">
+
+    <style>
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" alt="logoImage">
+                <img src="../../img/logoW.png" alt="logo Image" height="60">
+            </a>
+            <!-- El boton debe colapsar el MENU que tenemos abajo como "mymenu" en su target-->
+            <button class="navbar-toggler ml-auto custom-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu">
+                <span class="navbar-toggler-icon" tabindex="0">
+                    <i class="fas fa-bars" style="color:#43B06E; font-size:28px;"></i>
+                </span>
+            </button>
+
+            <!-- Menú con la lista de enlaces a los que podemos movernos-->
+            <div class="collapse navbar-collapse justify-content-end" id="mymenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link menu-link" href="../../index.html">Home</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button"
+                            data-bs-toggle="dropdown">Instalar Software</a>
+                        <ul class="dropdown-menu custom-drop">
+                            <li><a class="dropdown-item" href="../../softwares/vscode/vscode.html"
+                                    style="--i:1;"><span></span> VSCode</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:2;"><span></span> Compilador</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:3;"><span></span> Debugador</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:4;"><span></span> IntelliJ IDEA</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:5;"><span></span> Anaconda</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:6;"><span></span> Arduino</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button"
+                            data-bs-toggle="dropdown">Recursos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="--i:1;"><span></span>ChatGpt</a></li>
+                            <li><a class="dropdown-item" href="../StackOverflow/Introduccion.html" style="--i:2;"><span></span>StackOverflow</a></li>
+                            <li><a class="dropdown-item active" href="./github.html"
+                                    style="--i:2;"><span></span>GitHub</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="../../road_maps.html">Road Maps</a> </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="../../salidas_laborales.html">Salidas
+                            Laborales</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main">
+        <div class="main_div">
+            <h1 class="title">GitHub</h1>
+            <h2 class="title2">Manejar repositorio de GitHub</h2>
+
+        </div>
+    </main>
+    <section class="github_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown_list active github_list" tabindex="0">
+                        <p class="title_github">GitHub</p>
+                        <div class="arrow">
+                            <span class="left-icon"></span>
+                            <span class="right-icon"></span>
+                            <div class="items col-sm">
+                                <ul id="subapartados">
+                                    <li> <a href="#" style="--i:1;">Instalar Git</a></li>
+                                    <li> <a href="#" style="--i:2;">Conceptos
+                                            fundamentales de GitHub</a></li>
+                                    <li> <a href="#" style="--i:3;">Comandos básicos de
+                                            GitHub</a></li>
+                                    <li> <a href="#" style="--i:4;">Clonar GitHub
+                                            repositorio </a></li>
+                                    <li> <a class="active" href="github.html" style="--i:5;">Manejar repositorio</a>
+                                    </li>
+                                    <li> <a href="#" style="--i:6;">Crear GitHub Pages</a></li>
+                                    <li> <a href="#" style="--i:7;">Escribir Readme</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="dropdown_github.js"></script>
+
+
+
+
+
+
+                <div class="col">
+                    <a href="#" class="active">Push</a>
+                </div>
+                <div class="col">
+                    <a href="#">Pull</a>
+                </div>
+                <div class="col">
+                    <a href="#">...</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col tutorial_container">
+
+                    <img src="img/04branch_created.png" alt="Tutorial_img" class="img-fluid">
+                    <p>Paso 1: Asegurar que esté en su branca, si no crea una.</p>
+
+
+
+                    <button class="btn_prev">Anterior</button>
+                    <button class="btn_next">Siguiente</button>
+
+
+
+                </div>
+            </div>
+            <script src="img_container.js"></script>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="mt-3">
+                <h5>Información</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;" tabindex="0">Sobre nosotros</a></p>
+            </div>
+            <span class="text-muted">© 2024 ProgWorld. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+/*Estilo para la main*/
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  background-color: #f1f1f1;
+  ;
+  margin-bottom: 30px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.main .icon img {
+  width: 50px;
+
+  margin: 0 auto;
+  display: block;
+
+}
+
+.main_div {
+
+  color: black;
+
+  width: 100%;
+  min-height: 500px;
+
+
+
+
+}
+
+
+
+.main .title {
+
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.main .title2 {
+
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-family: Cursive;
+}
+
+/* Estilos para el github section y dropdown list*/
+.github_section {
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  width: 100%;
+  height: 100%;
+}
+
+.github_list {
+  position: relative;
+
+
+}
+
+.dropdown_list {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  background: rgb(5, 185, 146);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, .2);
+  transition: width 0.5s ease;
+  /* Transición suave de medio segundo */
+  transition: height 0.5s ease;
+  /* Transición suave de medio segundo */
+}
+
+.dropdown_list .left-icon,
+.dropdown_list .right-icon {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  background: white;
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.dropdown_list.active .left-icon {
+  transform: rotate(-45deg);
+}
+
+.dropdown_list .left-icon {
+  transform: rotate(-135deg);
+}
+
+.dropdown_list.active .right-icon {
+  transform: rotate(45deg);
+}
+
+.dropdown_list .right-icon {
+  top: 2px;
+  transform: rotate(135deg);
+}
+
+.dropdown_list .items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: wrap;
+  margin-top: 63px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.dropdown_list .items p {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dropdown_list.active .items {
+  visibility: visible;
+}
+
+.dropdown_list .items a {
+  position: relative;
+  left: -100%;
+  display: flex;
+  font-size: 20px;
+  background: white;
+  color: #40b9a5;
+  text-decoration: none;
+  border-radius: 5px;
+  padding-top: 2.5px;
+  z-index: 1;
+  overflow: hidden;
+  padding-left: 10px;
+  transition: .5s;
+  transition-delay: calc(60ms * var(--i));
+  padding: 20px;
+  justify-content: center;
+}
+
+.dropdown_list .items a img {
+  margin-right: 30px;
+}
+
+.dropdown_list.active .items a {
+  left: 0;
+}
+
+.dropdown_list .items a.active {
+  background-color: rgba(5, 150, 119, 0.231);
+}
+
+.dropdown_list .items a:hover {
+  background-color: rgba(5, 150, 119, 0.231);
+}
+
+.dropdown_list .items a:focus {
+  background-color: rgba(5, 150, 119, 0.231);
+}
+
+.dropdown_list .items a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #40b9a5;
+  z-index: -1;
+  border-radius: inherit;
+  transform: rotate(160deg);
+  transform-origin: right;
+  transition: .5s;
+}
+
+.dropdown_list .items a:hover span {
+  transform: rotate(0deg);
+}
+
+.dropdown_list .items a:focus span {
+  transform: rotate(0deg);
+}
+
+.title_content {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-family: Cursive;
+
+}
+
+/* Estilo para el tutorial y el container*/
+
+.container-fluid a:link {
+  text-decoration: none;
+}
+
+.container-fluid a {
+  color: rgb(5, 185, 146);
+  font-size: 17px;
+
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+
+.container-fluid a.active,
+a:hover {
+
+  color: white;
+  transition: .5s;
+  background-color: rgb(5, 185, 146);
+}
+
+.tutorial_container {
+  position: relative;
+  width: 70%;
+  min-width: 450px;
+
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  margin: auto
+}
+
+
+.tutorial_container img {
+  position: relative;
+
+
+
+}
+
+.tutorial_container p {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  color: #000;
+}
+
+
+.tutorial_container .btn_prev {
+  font-size: 0;
+  /* texto para lector de pantalla */
+  position: absolute;
+  top: 50%;
+  left: 0%;
+
+  width: 20px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-image: url('./img/left_arrow.png');
+  background-size: 20px 50px;
+  background-repeat: no-repeat;
+}
+
+.tutorial_container .btn_next {
+  font-size: 0;
+  /* texto para lector de pantalla */
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 20px);
+
+  width: 20px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-image: url('./img/right_arrow.png');
+  background-size: 20px 50px;
+  background-repeat: no-repeat;
+}
+
+
+
+.btn_next:hover,
+.btn_prev:hover {
+  background: #6aff0058;
+
+}

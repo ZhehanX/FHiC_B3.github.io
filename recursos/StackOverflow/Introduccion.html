@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog World</title>
+    <script src="https://kit.fontawesome.com/e5991aea00.js" crossorigin="anonymous"></script>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style_navigation.css">
+    <link rel="stylesheet" href="../../softwares/vscode/style_softwares.css">
+    <link rel="stylesheet" href="../../style_stackOverflow.css">
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="stackoverflow_listeners.js"></script>
+
+</head>
+
+<body>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            VANTA.NET({
+                el: "#back",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x0087EE, // Array de colores: verde y celeste
+                backgroundColor: 0x004166, // Color de fondo azul oscuro
+                points: 17.00,
+                maxDistance: 27.00,
+                spacing: 16.00,
+                showDots: false
+            })
+        }
+        );
+    </script>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" alt="logoImage">
+                <img src="../../img/logoW.png" alt="logo Image" height="60">
+            </a>
+            <!-- El boton debe colapsar el MENU que tenemos abajo como "mymenu" en su target-->
+            <button class="navbar-toggler ml-auto custom-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu">
+                <span class="navbar-toggler-icon" tabindex="0">
+                    <i class="fas fa-bars" style="color:rgba(64, 185, 165, 0.9); font-size:28px;"></i>
+                </span>
+            </button>
+
+            <!-- Menú con la lista de enlaces a los que podemos movernos-->
+            <div class="collapse navbar-collapse justify-content-end" id="mymenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link menu-link" href="../../index.html">Home</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button"
+                            data-bs-toggle="dropdown">Instalar Software</a>
+                        <ul class="dropdown-menu custom-drop">
+                            <li><a class="dropdown-item" href="../../softwares/vscode/vscode.html"
+                                    style="--i:1;"><span></span> VSCode</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:2;"><span></span> Compilador</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:3;"><span></span> Debugador</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:4;"><span></span> IntelliJ IDEA</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:5;"><span></span> Anaconda</a></li>
+                            <li><a class="dropdown-item" href="#" style="--i:6;"><span></span> Arduino</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle menu-link" href="#" role="button"
+                            data-bs-toggle="dropdown">Recursos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="--i:1;"><span></span>ChatGpt</a></li>
+                            <li><a class="dropdown-item active" href="../../recursos/StackOverflow/Introduccion.html"
+                                    style="--i:2;"><span></span>StackOverflow</a></li>
+                            <li><a class="dropdown-item" href="../GitHub/github.html"
+                                    style="--i:3;"><span></span>GitHub</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="road_maps.html">Road Maps</a> </li>
+                    <li class="nav-item"> <a class="nav-link menu-link" href="salidas_laborales.html">Salidas
+                            Laborales</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main content" id="back">
+
+        <div class="main-container">
+            <h2 class="titleStackOverflow">Stack OverFlow</h2>
+            <div class="container d-flex justify-content-center" style="width: 80%;">
+                <a class="boxStackOverflow" href="https://stackoverflow.com/" tabindex="0">
+                    <img src="../../img/stackover.png" alt="StackOverFlow Icon">
+                </a>
+            </div>
+            <p class="descriptionStackOverflow">Proporcionamos consejos y páginas que te ayudarán a mejorar tus
+                habilidades de programación.</p>
+
+        </div>
+    </main>
+
+    <section class="software content">
+        <div class="software_container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="sofware_list" tabindex="0">
+                            <div class="dropdown_list active">
+                                <p class="title_softwares">Stack OverFlow</p>
+                                <div class="arrow">
+                                    <span class="left-icon"></span>
+                                    <span class="right-icon"></span>
+                                    <div class="items">
+                                        <a href="#" style="--i:1;"><span></span>
+                                            <p>Introducción</p>
+                                        </a>
+                                        <a href="stackOverflow_preguntar.html" style="--i:2;"><span></span>
+                                            <p>Preguntar</p>
+                                        </a>
+                                        <a href="stackOverflow_responder.html" style="--i:3;"><span></span>
+                                            <p>Responder</p>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="col-10">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+                            <h3 style="text-align: center; color:white; font-weight: bold;">Introducción</h3>
+                            <p>
+                                Stack Overflow es una de las comunidades en línea más grandes y activas dedicadas a
+                                la programación y al desarrollo de software. Fundada en 2008 por Jeff Atwood y Joel Spolsky,
+                                Stack Overflow se ha convertido en un recurso fundamental para programadores de todos los
+                                niveles de experiencia en busca de respuestas a preguntas técnicas, solución de problemas y
+                                aprendizaje colaborativo. Con millones de usuarios registrados y una amplia gama de temas cubiertos,
+                                Stack Overflow ofrece una plataforma donde los desarrolladores pueden compartir conocimientos,
+                                colaborar en proyectos, y construir su reputación profesional mediante la participación activa en la
+                                comunidad.
+                            </p>
+
+                        </div>
+                    </div>    
+                    
+                </div>    
+            </div>
+            <br>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="mt-3">
+                <h5>Información</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;" tabindex="0">Sobre nosotros</a></p>
+            </div>
+            <span class="text-muted">© 2024 ProgWorld. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
